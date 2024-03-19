@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link href="style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <header>
+          <!-----Navbar------->
+          <div class="grid grid-cols-3 px-16 w-screen h-20 border-b-[1px] items-center fixed  top-0 bg-white">
+                 <img src="airbnb-logo.png" alt="" class="h-16 w-28"/>
+                 <div class="flex justify-evenly items-center border rounded-full shadow-md h-12 w-96">
+                    <button class="border-r-2 text-sm font-medium px=4">Anywhere</button>
+                    <button class="border-r-2 text-sm font-medium px=4">Any week</button>
+                    <button class="text-sm font-medium text-gray-500 px=4">Add guests</button>
+                    <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
+              
+                </div>
+                 <div class="flex justify-end items-center gap-8">
+                    <button class="text-sm font-medium">Airbnb your home</button>
+                    <span class="material-symbols-outlined">language</span>
+                    <div class="flex justify-evenly items-center border rounded-full border shadow-md h-10 w-20 py-1.25 pr-1.25 pl-2">
+                        <i class="fa-solid fa-bars"></i>
+                        <button class="bg-black text-white rounded-full text-center w-7 h-7 text-[10px] font-semibold " >E</button>
+                    </div>
+                 </div>
+          </div>
+    
+           <!-----Category------->
+           <div class="flex items-center h-24 space-x-5 top-20 fixed bg-white w-screen mx-auto">
+            <div class="flex items-center jusify-center space-x-10 pl-8">
+                <div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                    <img src="type1.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                      <p class="text-xs font-normal">Amazing Pools</p>
+                </div>
+                 <div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                <img src="type2.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                   <p class="text-xs font-normal">Play</p>
+              </div><div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                <img src="type3.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                   <p class="text-xs font-normal">Historical Homes</p>
+              </div><div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                <img src="type4.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                   <p class="text-xs font-normal">CountrySide</p>
+              </div>
+              <div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                <img src="type5.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                   <p class="text-xs font-normal">Surfing</p>
+              </div>
+              <div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                <img src="type6.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                   <p class="text-xs font-normal">Farms</p>
+              </div>
+              <div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                <img src="type7.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                   <p class="text-xs font-normal">Amazing Views</p>
+              </div>
+              <div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                <img src="type8.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                   <p class="text-xs font-normal">RoomLakes Front</p>
+              </div>
+              <div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                <img src="type9.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                   <p class="text-xs font-normal">Beach Front </p>
+              </div>
+              <div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                <img src="type10.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                   <p class="text-xs font-normal">Playstations</p>
+              </div>
+              <div class="flex flex-col items-center text-gray-200 hover:text-black gap-2 pl-16">
+                <img src="type11.jpeg" alt="" style="height: 50px; width: 50px;"/>
+                   <p class="text-xs font-normal">Golfing</p>
+              </div>
+             
+        
+            </div>
+            <span class="material-symbols-outlined pl-4"> arrow_circle_right</span>
+            <div class ="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border">
+                <span class="material-symbols-outlined pl-2">sync_alt</span>
+                <p class="text-xs font-medium pr-2">Filters</p>
+            </div>
+         </div>
+
+
+            <!-----Price bar------->
+<div class="flex justify-center mt-48">
+    <div class="flex justify-between  items-center p-4 border rounded-xl w-[600px] h-16">
+       <div class="flex justify-start">
+          <p class="border-r-2 border-gray-100 pr-4 text-base font-medium">Display total price</p>
+          <p class="pl-4 text-black-400 text-base">Include all fees, before taxes</p>
+        </div>
+        <span class="material-symbols-outlined">toggle_off </span>
+    </div>
+</div>
+
+    </header>
+
+  <!-----  Hostel  information     --> 
+   
+    <main class="mt-14 mx-10">
+  <div class="grid grid-cols-4">
+     <div class="flex flex-col h-96 w-72">
+           <img src="img1.jpg"  alt="" class="w-72 h-64 rounded-xl"/>
+           <div class="flex justify-between mt-2">
+              <p class="text-sm font-medium">Goa,India</p>
+             <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+             </div>
+         </div>
+         <p class="flex text-sm text- bg-blend-darken-400">62 kilometers away</p>
+         <p class="flex text-sm text- bg-blend-darken-400">30 Jul - 4 Aug</p>
+         <p class="flex text-sm  font-medium mt-2">₹42,701 night</p>
+     </div>
+     <div class="flex flex-col h-96 w-72">
+        <img src="img2.jpg"  alt="" class="w-72 h-64 rounded-xl"/>
+        <div class="flex justify-between mt-2">
+           <p class="text-sm font-medium">Goa,India</p>
+          <div class="flex">
+             <i class="fa-solid fa-star"></i>
+             <p class="text-sm font-light">5.0</p>
+          </div>
+      </div>
+      <p class="flex text-sm text- bg-blend-darken-400">62 kilometers away</p>
+      <p class="flex text-sm text- bg-blend-darken-400">30 Jul - 4 Aug</p>
+      <p class="flex text-sm  font-medium mt-2">₹42,701 night</p>
+  </div>
+  <div class="flex flex-col h-96 w-72">
+    <img src="img3.jpg"  alt="" class="w-72 h-64 rounded-xl"/>
+    <div class="flex justify-between mt-2">
+       <p class="text-sm font-medium">Goa,India</p>
+      <div class="flex">
+         <i class="fa-solid fa-star"></i>
+         <p class="text-sm font-light">5.0</p>
+      </div>
+  </div>
+  <p class="flex text-sm text- bg-blend-darken-400">62 kilometers away</p>
+  <p class="flex text-sm text- bg-blend-darken-400">30 Jul - 4 Aug</p>
+  <p class="flex text-sm  font-medium mt-2">₹42,701 night</p>
+</div>
+<div class="flex flex-col h-96 w-72">
+    <img src="img4.jpg"  alt="" class="w-72 h-64 rounded-xl"/>
+    <div class="flex justify-between mt-2">
+       <p class="text-sm font-medium">Goa,India</p>
+      <div class="flex">
+         <i class="fa-solid fa-star"></i>
+         <p class="text-sm font-light">5.0</p>
+      </div>
+    </div>
+    <p class="flex text-sm text- bg-blend-darken-400">62 kilometers away</p>
+    <p class="flex text-sm text- bg-blend-darken-400">30 Jul - 4 Aug</p>
+    <p class="flex text-sm  font-medium mt-2">₹42,701 night</p>
+</div>
+      <div class="flex flex-col h-96 w-72">
+        <img src="img1.jpg"  alt="" class="w-72 h-64 rounded-xl"/>
+        <div class="flex justify-between mt-2">
+           <p class="text-sm font-medium">Goa,India</p>
+          <div class="flex">
+             <i class="fa-solid fa-star"></i>
+             <p class="text-sm font-light">5.0</p>
+          </div>
+      </div>
+      <p class="flex text-sm text- bg-blend-darken-400">62 kilometers away</p>
+      <p class="flex text-sm text- bg-blend-darken-400">30 Jul - 4 Aug</p>
+      <p class="flex text-sm  font-medium mt-2">₹42,701 night</p>
+  </div>
+  <div class="flex flex-col h-96 w-72">
+    <img src="img2.jpg"  alt="" class="w-72 h-64 rounded-xl"/>
+    <div class="flex justify-between mt-2">
+       <p class="text-sm font-medium">Goa,India</p>
+      <div class="flex">
+         <i class="fa-solid fa-star"></i>
+         <p class="text-sm font-light">5.0</p>
+      </div>
+  </div>
+  <p class="flex text-sm text- bg-blend-darken-400">62 kilometers away</p>
+  <p class="flex text-sm text- bg-blend-darken-400">30 Jul - 4 Aug</p>
+  <p class="flex text-sm  font-medium mt-2">₹42,701 night</p>
+</div>
+<div class="flex flex-col h-96 w-72">
+    <img src="img3.jpg"  alt="" class="w-72 h-64 rounded-xl"/>
+    <div class="flex justify-between mt-2">
+       <p class="text-sm font-medium">Goa,India</p>
+      <div class="flex">
+         <i class="fa-solid fa-star"></i>
+         <p class="text-sm font-light">5.0</p>
+      </div>
+  </div>
+  <p class="flex text-sm text- bg-blend-darken-400">62 kilometers away</p>
+  <p class="flex text-sm text- bg-blend-darken-400">30 Jul - 4 Aug</p>
+  <p class="flex text-sm  font-medium mt-2">₹42,701 night</p>
+</div>
+<div class="flex flex-col h-96 w-72">
+    <img src="img4.jpg"  alt="" class="w-72 h-64 rounded-xl"/>
+    <div class="flex justify-between mt-2">
+       <p class="text-sm font-medium">Goa,India</p>
+      <div class="flex">
+         <i class="fa-solid fa-star"></i>
+         <p class="text-sm font-light">5.0</p>
+      </div>
+  </div>
+  <p class="flex text-sm text- bg-blend-darken-400">62 kilometers away</p>
+  <p class="flex text-sm text- bg-blend-darken-400">30 Jul - 4 Aug</p>
+  <p class="flex text-sm  font-medium mt-2">₹42,701 night</p>
+</div>
+  </div>
+
+    </main>
+
+    <footer  class="flex justify-between h-8 items-center px-10 fixed bottom-0 w-screen bg-white">
+     <div class="flex text-sm font-base space-x-2">  
+       <p>© 2024 Airbnb, Inc.</p>
+        <p>.</p>
+        <p>Privacy</p>
+        <p>.</p>
+        <p>Terms</p>
+        <p>.</p>
+        <p>Sitemap</p>
+        <p>.</p>
+        <p>Company details</p>
+     </div>
+     <div  class="flex space-x-4 text-sm font-medium">
+        <span class="material-symbols-outlined">language</span>
+        <p>English(In)</p>
+        <p> ₹ INR</p>
+        <p>Support & resources</p>
+     </div>
+
+
+    </footer>
+    
+</body>
+</html>
